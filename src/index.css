@@ -1,13 +1,85 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(132, 56, 194, 0.448);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  margin: 2rem;
+}
+main {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  display: none;
+  gap: 0.5rem;
+  position: relative;
 }
+li {
+  list-style: none;
+  width: 2rem;
+  height: 2rem;
+  box-shadow: 0 1px 3px 1px black;
+}
+li:hover {
+  transform: scale(1.1);
+}
+.holder {
+  display: flex;
+  justify-content: center;
+  
+}
+.boxSet {
+  position: absolute;
+  width: 600px;
+  height: 410px;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 black;
+  background-color: rgb(49, 164, 164);
+}
+.hide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  gap: 1rem;
+}
+.button {
+  background-color: rgb(55, 143, 55);
+  color: white;
+  width: 10rem;
+  height: 2rem;
+}
+.buttonBox {
+  display: flex;
+  position: relative;
+  top: 420px;
+}
+.button1 {
+  display: none;
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgb(227, 80, 80);
+  color: white;
+  width: 10rem;
+  height: 2rem;
+  margin: 2rem;
+}
+
+
+
+/* div, .hide */
